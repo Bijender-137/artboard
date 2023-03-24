@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+
+import "./App.css";
+import Card from "./components/Card";
+import Duration from "./components/Duration";
+import IncreasingProcess from "./components/IncreasingProcess";
+import MyHero from "./components/MyHero";
+import MyNav from "./components/MyNav";
+import PostAutomation from "./components/PostAutomation";
+import PreAutomation from "./components/PreAutomation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyNav />
+      <MyHero />
+      <PreAutomation />
+      <PostAutomation />
+      <IncreasingProcess />
+      <Duration />
+    </>
   );
 }
+
+// {counting}
+
+// const a = [1, 2, 3, 4, 5];
+// for (var b = 0; b < a.length; b++) {
+//   console.log(a[b]);
+// }
 
 export default App;
