@@ -147,6 +147,16 @@ ul li a:hover::before {
   right: 0px;
 }
 
+.footer_ball {
+  right: 50px;
+  bottom: -50px;
+}
+
+.cross_footer {
+  left: 50px;
+  bottom: -30px;
+}
+
 /* hero section */
 
 .bg_full_img {
@@ -189,10 +199,12 @@ ul li a:hover::before {
 .zindex {
   z-index: 222 !important;
 }
-.z_index{
+
+.z_index {
   position: relative;
   z-index: 5;
 }
+
 .wave_2_set {
   top: 0%;
   z-index: 1;
@@ -377,11 +389,13 @@ ul li a:hover::before {
   top: 8px;
   z-index: -2;
 }
-.yellow_btn_1{
+
+.yellow_btn_1 {
   left: 10%;
   top: 90px;
 }
-.yellow_btn_2{
+
+.yellow_btn_2 {
   right: 10%;
   top: 90px;
 }

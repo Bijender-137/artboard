@@ -6,12 +6,14 @@ import Clock from "../assets/img/svg/clock_icon.svg";
 import LeftArrow2 from "../assets/img/svg/left_arrow_2.svg";
 import Invoice from "../assets/img/svg/invoice_img.svg";
 import Effort from "../assets/img/svg/effort_img.svg";
+import BlackBAll from "../assets/img/svg/black_ball.svg";
+import YellowCross from "../assets/img/svg/yellow_cross.svg";
 const Duration = () => {
   return (
     <>
       <section className="py-5 position-relative">
         <div className="footer_dashed_line position-absolute"></div>
-    
+
         <Container className="pb-5">
           <div className=" d-flex align-items-center justify-content-around">
             <div className="gray_underline"></div>
@@ -49,7 +51,9 @@ const Duration = () => {
               </div>
             </div>
           </div>
-          <div className=" d-flex flex-column flex-lg-row align-items-center justify-content-evenly mt-5  invoice_box rounded-4 py-5">
+          <div className=" d-flex flex-column flex-lg-row align-items-center justify-content-evenly mt-5  invoice_box rounded-4 py-5 position-relative">
+            <img className="position-absolute footer_ball" src={BlackBAll} alt="BlackBAll" />
+            <img className="position-absolute cross_footer" src={YellowCross} alt="YellowCross" />
             <div className="">
               <div className=" ">
                 <h2 className="ff_inter fw-bold fs-45 clr_dark_blue">42K</h2>
@@ -74,7 +78,7 @@ const Duration = () => {
             </div>
           </div>
           <div className="bg_clr_dark_blue d-flex flex-column flex-lg-row align-items-center justify-content-evenly mt-5 rounded-4 py-5">
-            <div className=" ">
+            <div>
               <h2 className="ff_inter fw-bold fs-60 text-white">95</h2>
               <p className="ff_inter fw-bold fs-xsm text-white months">
                 MAN DAYS
